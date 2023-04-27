@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+:root {
+    --main-color: rgb(144, 46, 255);
+    --text-color: rgb(255, 255, 255);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d3eefe;
+
+}
+
+/* ----- NAVBAR ----- */
+
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+.navbar-brand {
+    font-family: 'Italiana', serif;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.navbar-brand img {
+    width: 18%;
+    height: auto;
+}
+
+.navbar {
+    background-color: var(--main-color);
+}
+
+.nav-link {
+    color: var(--text-color);
+    margin: 0px 5px;
+    border-radius: 20px;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+button a{
+    text-decoration: none;
+    color:black;
+}
+
+/* ----- section ----- */
+
+/* ----- Section_1 ----- */
+
+section h1 {
+    font-size: 40px;
+    font-family: 'Italiana', serif;
+    font-weight: bold;
+    padding: 50px 0px 0px 0px;
+    z-index: 999;
+}
+
+section p {
+    font-size: 20px;
+    font-weight: 100;
+    z-index: 999;
+}
+
+.first-section {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    inset: 0 !important;
+}
+
+.first-section span {
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: #d3eefe;
+}
+
+.first-section .image-wrapper {
+    position: absolute;
+}
+
+.first-section img {
+    max-width: 100%;
+    height: fit-content;
+    margin-top: -200px;
+}
+
+.section_1_bg {
+    z-index: -1;
+}
+
+.ingredient-images {
+    position: absolute;
+    width: 400px;
+    left: calc(50% - 400px);
+    height: 530px;
+    top: 550px;
+}
+
+.section_1_01 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: auto;
+    height: auto;
+}
+
+.section_1_02 {
+    position: absolute;
+    top: 80px;
+    right: 130px;
+}
+
+.section_1_03 {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+}
+
+.section_1_04 {
+    position: absolute;
+    top: 200px;
+    right: 120px;
+}
+
+.section_1_05 {
+    position: absolute;
+    top: 225px;
+    right: 150px;
+}
+
+.section_1_06 {
+    position: absolute;
+    top: 170px;
+    right: 210px;
+}
+
+.section_1_07 {
+    position: absolute;
+    top: 250px;
+    right: 10px;
+}
+
+.section_1_08 {
+    position: absolute;
+    top: 320px;
+    right: 110px;
+}
+
+.section_1_09 {
+    position: absolute;
+    top: 370px;
+    right: 10px;
+}
+
+.second-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.second-section img {
+    max-width: 100%;
+    height: fit-content;
+}
+
+.second-section .images-wrapper {
+    position: absolute;
+    display: flex;
+    padding: 200px 0;
+    top: 20%;
+    overflow: hidden;
+}
+
+.image-container {
+    overflow: hidden;
+    height: fit-content;
+}
+
+.third-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.third-section img {
+    max-width: 100%;
+    height: fit-content;
+}
+
+.third-section .images-wrapper {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third-section .images-wrapper img {
+    position: absolute;
+}
+
+.forth-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.forth-section .images-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forth-section .images-wrapper img {
+    position: absolute;
+}
+
+.forth-section img {
+    max-width: 100%;
+    height: fit-content;
+}
+
+.mobile{
+    display: none;
+}
+
+.mobile-view {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mobile-view span {
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: #d3eefe;
+}
+
+.mobile-view h1 {
+    font-size: 25px;
+}
+
+.mobile-view p {
+    font-size: 18px;
+}
+
+.mobile-view img{
+    width: 90%;
+    height: auto;
+}
+
+
+.order-section {
+    width: 100%;
+    height: auto;
+    padding: 30px 0px;
+    background-color: rgba(255, 255, 255, 0.548);
+    margin-top: 100px;
+    z-index: 1;
+}
+
+.order-section button {
+    font-size: 20px;
+}
+
+.order-section h2 {
+    font-size: 40px;
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    section h1 {
+        font-size: 40px;
+    }
+
+    section p {
+        font-size: 20px;
+
+    }
+
+    .first-section,.second-section,.third-section,.forth-section{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+/* ----- MENU_ PARALLAX ----- */
+
+.parallax {
+    /* The image used */
+    background-image: url("img/parallax.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.heading {
+    background-color: #ffffffd2;
+    height: 100vh;
+}
+
+.heading h1 {
+    padding: 0px 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.menu-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-head{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-head h2{
+    font-family: 'Italiana', serif;
+    font-weight: bold;
+}
+
+.menu-title h1{
+    font-size: 40px;
+}
+
+.menu-title p{
+    text-align: center;
+}
+
+.card {
+    margin: 8px 0px;
+    padding: 10px;
+    outline: none;
+}
+
+.card-body{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dish,.price{
+    font-size: 25px;
+}
+
+.menu-buttons{
+    margin: 10px 0px;
+}
+
+.menu-buttons button{
+    padding:5px 10px;
+    margin: 2px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: #d3eefe;
+}
+
+.login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 200px 100px;
+}
+
