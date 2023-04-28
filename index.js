@@ -47,7 +47,7 @@ app.get('/contact',(req,res) => {
     res.sendFile(__dirname +'/views/contact.html');
 })
 
-app.get('/contact',(req,res) => {
+app.get('/menu',(req,res) => {
     res.sendFile(__dirname +'/views/menu.html');
 })
 
