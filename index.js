@@ -61,7 +61,7 @@ app.use(bodyparser.json())
 
 app.get('/',(req,res) => {
 
-        res.sendFile('./views/index.html',(err) =>{
+        res.sendFile('views\index.html',(err) =>{
             if(err){
                 console.log(err);
             }
