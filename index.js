@@ -20,9 +20,9 @@ mongoose.connect(
     }
   );
 
-app.use(express.static(path.join(__dirname +'views')));
-app.use(express.static(path.join(__dirname + 'assets')));
-app.use(express.static(path.join(__dirname + 'node_modules')));
+app.use(express.static(__dirname +'views'));
+app.use(express.static(__dirname + 'assets'));
+app.use(express.static(__dirname + 'node_modules'));
 
 app.use(bodyparser.urlencoded({extended:false}))
 app.use(bodyparser.json())
