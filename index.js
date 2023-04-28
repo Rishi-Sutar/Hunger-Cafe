@@ -61,9 +61,16 @@ app.use(bodyparser.json())
 
 app.get('/',(req,res) => {
 
-        res.sendFile('/views/index.html');
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.end();
+        res.sendFile('/views/index.html',(err) =>{
+            if(err){
+                console.log(err);
+            }
+            else{
+                res.writeHead(200, { 'Content-Type': 'text/html' });
+                res.end();    
+            }
+        });
+
 })
 
 
