@@ -20,7 +20,7 @@ mongoose.connect(
     }
   );
 
-app.use(express.static(__dirname +'views'));
+app.use(express.static(__dirname +'views/main.css'));
 app.use(express.static(__dirname + 'assets/img'));
 app.use(express.static(__dirname + 'assets/img/food'));
 app.use(express.static(__dirname + 'assets/img/gsap'));
