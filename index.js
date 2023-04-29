@@ -40,7 +40,6 @@ app.get('/',(req,res) => {
 
 app.get('/about',(req,res) => {
     res.sendFile(__dirname +'/views/about.html');
-    console.log('hii');
 })
 
 app.get('/contact',(req,res) => {
