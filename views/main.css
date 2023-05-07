@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 :root {
     --main-color: rgb(144, 46, 255);
@@ -322,9 +323,7 @@ section p {
 
 }
 
-@media screen and (max-width: 992px) {
 
-}
 
 /* ----- MENU_ PARALLAX ----- */
 
@@ -431,3 +430,45 @@ section p {
     padding: 200px 100px;
 }
 
+.item{
+    background: #ffffffc5;
+    margin:0px 10px 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    width: 45%;
+}
+
+.menu-dish{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    font-size: 20px;
+    margin-top: 10px;
+    border-bottom: 2px dotted grey;
+}
+
+.dish-name{
+    color: rgb(90, 90, 90);
+}
+
+.dish-price{
+    font-weight: bold;
+    color: black;
+}
+
+.item h2{
+    font-family: 'Pacifico', cursive;
+}
+
+.item h3{
+    font-size: 25px;
+    color: #572727;
+}
+
+@media screen and (max-width: 450px) {
+    .item{
+        width: 100%;
+        margin:0px 0px 20px ;
+    }
+}
